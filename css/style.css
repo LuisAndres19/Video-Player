@@ -1,0 +1,57 @@
+@import "./buttoms.css";
+
+body {
+  background-color: #26b4bc;
+}
+
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+}
+
+.player {
+  margin-block-start: 100px;
+  position: relative;
+}
+
+.player video {
+  inline-size: 100%;
+}
+
+.player-title {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+  color: white;
+}
+
+.player-action {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.player-barra {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  padding: 10px;
+}
+
+.player-barra input {
+  flex: 1;
+}
+
+.ocultarBotones {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 1000ms;
+}
+
+.player:hover .ocultarBotones {
+  opacity: 1;
+}

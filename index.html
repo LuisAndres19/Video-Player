@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <video
+          poster="./images/poster.jpg"
+          id="video"
+          src=""
+          width="400"
+        ></video>
+        <div class="ocultarBotones">
+          <h2 class="player-title">Musica para programar</h2>
+          <div class="player-action">
+            <button
+              class="buttom"
+              id="retroceder"
+              title="retroceder 10 segundos"
+            ></button>
+            <button class="buttom" id="play" title="reproducir"></button>
+            <button class="buttom" hidden id="pause" title="pausar"></button>
+            <button
+              class="buttom"
+              id="avanzar"
+              title="adelantar 10 segundos"
+            ></button>
+          </div>
+          <div class="player-barra">
+            <input id="range" type="range" min="0" value="0" step="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
